@@ -1,5 +1,5 @@
 package unidade_1;
-import java.util.Locale;
+
 import java.util.Scanner;
 
 /* 
@@ -10,28 +10,26 @@ import java.util.Scanner;
 */
 public class Ex05 {
     public static void main(String[] args) throws Exception {
-        
-        Scanner teclado = new Scanner(System.in).useLocale(Locale.US);
-        String entrada;
-        int centena, dezena, unidade;
-        
-        System.out.println("Digite um número no formato CDU (Centena,Dezena e Unidade): ");
-        entrada = teclado.nextLine();
-        
-        if (entrada.length() == 3){
-            int numero = Integer.parseInt(entrada);
 
-            centena = numero / 100;
-            dezena = (numero % 100) / 10;
-            unidade = (numero % 100) % 10;
+        Scanner teclado = new Scanner(System.in);
+        int entrada;
+        int centena, dezena, unidade;
+
+        System.out.println("Digite um número no formato CDU (Centena, Dezena e Unidade): ");
+        entrada = teclado.nextInt();
+
+        if (entrada > 99 && entrada < 1000) {
+
+            centena = entrada / 100;
+            dezena = (entrada % 100) / 10;
+            unidade = (entrada % 100) % 10;
 
             System.out.printf("Número informado no formado UCD: %d%d%d\n", unidade, centena, dezena);
-            
-        }else{
+
+        } else {
             System.out.println("Erro! Informe um valor válido.");
         }
-        
+
         teclado.close();
     }
 }
-

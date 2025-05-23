@@ -15,7 +15,7 @@ public class Ex17 {
         int anos = 0;
 
         while (cidadeA <= cidadeB) {
-            cidadeA += cidadeA * 0.35;
+            cidadeA += cidadeA * 0.035;
             cidadeB += cidadeB * 0.01;
             anos++; 
         }
