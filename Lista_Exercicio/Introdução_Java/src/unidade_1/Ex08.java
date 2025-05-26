@@ -18,27 +18,26 @@ public class Ex08 {
         double valorProduto;
         Scanner leitor = new Scanner(System.in);
 
-
         System.out.print("Informe o código do setor: ");
         codigo = leitor.nextInt();
         System.out.print("Qual o valor do produto? R$");
         valorProduto = leitor.nextDouble();
 
         if(codigo == 222){
-            if(valorProduto > 500){
+            if(valorProduto > 500.0){
                 valorProduto -= (10.0 / 100.0) * valorProduto;
             }
 
         }else if(codigo == 111){
 
             if(valorProduto > 100){
-                valorProduto = (40 / 100) * valorProduto;
+                valorProduto = (40.0 / 100.0) * valorProduto;
 
-            } else if(valorProduto >= 50 && valorProduto <= 100){
-                valorProduto = (20 / 100) * valorProduto;
+            } else if(valorProduto >= 50.0 && valorProduto <= 100.0){
+                valorProduto = (20.0 / 100.0) * valorProduto;
 
             }else{
-                valorProduto = (10 / 100) * valorProduto;
+                valorProduto = (10.0 / 100.0) * valorProduto;
             }
 
         }else{
