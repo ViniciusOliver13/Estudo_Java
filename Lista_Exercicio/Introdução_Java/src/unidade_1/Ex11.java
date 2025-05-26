@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Ex11 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        double x1, x2;
-        double y1, y2;
+        double x1, y1;   // Par (X, Y)
+        double x2, y2;
 
         System.out.println("Informe o X do 1º ponto (x, y): ");
         x1 = leitor.nextDouble();
