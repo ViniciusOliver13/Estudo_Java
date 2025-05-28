@@ -12,7 +12,7 @@ public class Ex16 {
         for (int i = 100; i < 1000; i++){
             n1 = i / 100;
             n2 = (i % 100) / 10;
-            n3 = (i % 100) - (n2 * 10);
+            n3 = (i % 100) % 10;
 
             soma = Math.pow(n1, 3);
             soma += Math.pow(n2, 3);

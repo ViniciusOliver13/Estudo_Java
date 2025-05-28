@@ -15,7 +15,7 @@ public class Ex14 {
         System.out.println("Informe o n-ézimo termo da série: ");
         n = leitor.nextInt();
 
-        for (int i = 0; i <= n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print(n1 + " ");
 
             soma = n2 + n1;
