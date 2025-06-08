@@ -3,7 +3,7 @@ package Lista_Exercicio.Arrays_e_ArrayLists.Ex49;
 public class Matriz {
     private float matriz[][] = new float[2][2];
 
-    public Matriz(int a11, int a12, int a21, int a22) {
+    public Matriz(float a11, float a12, float a21, float a22) {
         matriz[0][0] = a11;
         matriz[0][1] = a12;
         matriz[1][0] = a21;
