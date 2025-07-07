@@ -14,7 +14,10 @@ public class DemoCliente {
             System.out.println("Digite o id: ");
             novoCliente.id = l.nextInt();
             
-            if (novoCliente.id < 0) break;
+            if (novoCliente.id < 0){
+                break;
+            }
+            
             System.out.println("Digite o nome: ");
             novoCliente.nome = l.next();
             

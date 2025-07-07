@@ -8,12 +8,13 @@ public class ContarLetras {
         String palavra = "HELLO THERE".replace(" ", "");
 
         for (int i = 0; i < palavra.length(); i++) {
-            if (!mapa.containsKey(palavra.charAt(i))){
-                mapa.put(palavra.charAt(i), 1);
+            Character letra = palavra.charAt(i);
+            if (!mapa.containsKey(letra)){
+                mapa.put(letra, 1);
 
             }else{
-                int qtd = mapa.get(palavra.charAt(i));
-                mapa.put(palavra.charAt(i), ++qtd);
+                int qtd = mapa.get(letra);
+                mapa.put(letra, ++qtd);
             }
         }
 

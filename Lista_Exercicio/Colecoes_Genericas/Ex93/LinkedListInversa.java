@@ -8,22 +8,22 @@ public class LinkedListInversa {
         LinkedList <Character> listaInversa = new LinkedList<>();
         String letras = "abcdfghjkl";
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < letras.length(); i++) {
             lista.add(letras.charAt(i));
         }
         
         for (int i = lista.size() - 1; i >= 0; i--) {
-            listaInversa.add(letras.charAt(i));
+            listaInversa.add(lista.get(i));
         }
 
-        for (Character caractere : lista) {
-            System.out.print(caractere + " ");
-        }
+        // for (Character caractere : lista) {
+        //     System.out.print(caractere + " ");
+        // }
 
-        System.out.println();
+        // System.out.println();
 
         for (Character caractere : listaInversa) {
-            System.out.print(caractere + " ");
+            System.out.print(caractere);
         }
     }
     
